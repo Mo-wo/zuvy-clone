@@ -1,0 +1,89 @@
+.section{
+    margin: 100px 150px;
+}
+.container{
+    background-color: hsl(237, 18%, 21%);
+    border-radius: 20px;
+    height: 73vh;
+    display: flex;
+}
+.swirls{
+    position: relative;
+    width: 100%;
+    height: 73vh;
+}
+.swirl1{
+    position: absolute;
+    top: -7.6%;
+    left: -3.1%;
+    width: 120px;
+    height: 120px;
+}
+.swirl2{
+    position: absolute;
+    top: -16%;;
+    left: 46%;
+    width: 150px;
+    height: 150px;
+}
+.swirl3{
+    position: absolute;
+    top: 25%;
+    left: 92.8%;
+    width: 120px;
+    height: 120px;
+}
+.swirl4{
+    position: absolute;
+    top: 78%;
+    left: 84.5%;
+    width: 180px;
+    height: 180px;
+}
+.swirl5{
+    position: absolute;
+    top: 89%;
+    left: 42%;
+    width: 110px;
+    height: 110px;
+}
+.content{
+    display: flex;
+    position: absolute;
+    width: 70%;
+    margin: 40px 85px;
+}
+.saly{
+    width: 400px;
+    height: 400px;
+    align-self: flex-start;
+    animation-name: phone1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes phone1 {
+    0% {transform: translateY(-80px);}
+    100%{transform: translateY(-60px);}
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 60px;
+}
+.text .h2, .p{
+    color: white;    
+}
+.h2{
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+
+}
+.text .p{
+   font-size: 16px;
+   margin-bottom: 20px;
+}
