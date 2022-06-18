@@ -30,12 +30,21 @@
     color: white;
 }
 .waitlistLink .arrow{
+    /* border: 1px solid red; */
     position: absolute;
     left: 160px;
+    top: 15px;
     color: white;
     font-size: 18px;
     transition: left 1s;
 }
 .waitlistLink:hover .arrow{
-    left: 183px;
+    left: 180px;
+}
+
+/* ----------------------Media Queries--------------------------- */
+@media screen and (min-width: 280px) {
+    .waitlistLink{
+        margin: auto;
+    }
 }

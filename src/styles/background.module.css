@@ -1,0 +1,47 @@
+.backdrop{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding-top: 95px;
+    position: absolute;
+    /* overflow: hidden; */
+    /* z-index: -1; */
+    border: 1px solid red;;
+
+    /* height: 110vh; */
+
+}
+.rect1, .rect2{
+    background-color: #9D87F2;
+    opacity: 0.1;
+    transform-origin:105%;
+    overflow: hidden;
+}
+.rect1{
+    width: 1000px;
+    height: 250px;
+    border-radius: 90px;
+    margin-bottom: 110px;
+    transform: skewY(-9deg) rotate(-20.12deg) translate(65%, 10%);
+}
+.rect2{
+    width: 800px;
+    height: 200px;
+    border-radius: 65px;
+    transform: skewY(-15deg) rotate(-15deg) translate(95%, 33%);
+}
+/* .ellipse1{
+    width: 500px;
+    height: 500px;
+} */
+
+/* ---------------------Media Queries-------------------- */
+@media screen and (min-width: 280px) {
+    .backdrop{
+        overflow: hidden;
+    }
+    .ellipse{
+        width: 500px;
+        height: 500px;
+    }
+}

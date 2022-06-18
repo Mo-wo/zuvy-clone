@@ -17,13 +17,13 @@ const Section7 = () => {
                                 </p>
                                 <div className={styles.expand}>
                                     <Button>
-                                        <ExpandMoreIcon className={styles.span1} ref="more"/>
-                                        <ExpandLessIcon className={styles.span2} ref="less"/>
+                                        <ExpandMoreIcon className={styles.span1}/>
+                                        <ExpandLessIcon className={styles.span2}/>
                                     </Button>
                                     
                                 </div>
                             </div>
-                            <p className={styles.hidden} ref="collapsedText">
+                            <p className={styles.hidden}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit mauris, pellentesque at scelerisque eget, mollis non nibh. Quisque in cursus sapien, et vulputate elit.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit mauris, pellentesque at scelerisque eget, mollis non nibh. Quisque in cursus sapien, et vulputate elit.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit mauris, pellentesque at scelerisque eget, mollis non nibh. Quisque in cursus sapien, et vulputate elit.
