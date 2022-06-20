@@ -13,7 +13,7 @@ import ellipse10 from './images/Ellipse_10.png';
 const Background = () => {
     return ( 
         <div className={styles.backdrop}>
-            <div className={styles.rect1}></div>
+            {/* <div className={styles.rect1}></div>
             <div className={styles.rect2}></div>
             <img className={`${styles.ellipse1} ${styles.ellipse}`} src={ellipse1} alt=""></img>
             <img className={`${styles.ellipse2} ${styles.ellipse}`} src={ellipse2} alt=""></img>
@@ -23,7 +23,7 @@ const Background = () => {
             <img className={`${styles.ellipse6} ${styles.ellipse}`} src={ellipse6} alt=""></img>
             <img className={`${styles.ellipse7} ${styles.ellipse}`} src={ellipse7} alt=""></img>
             <img className={`${styles.ellipse9} ${styles.ellipse}`} src={ellipse9} alt=""></img>
-            <img className={`${styles.ellipse10} ${styles.ellipse}`} src={ellipse10} alt=""></img>
+            <img className={`${styles.ellipse10} ${styles.ellipse}`} src={ellipse10} alt=""></img> */}
 
         </div>
 

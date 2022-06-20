@@ -1,3 +1,4 @@
+import styles from './styles/app.module.css';
 import Navbar from './Navbar';
 import Home from './Home';
 // import Section1 from './Section1';
@@ -13,7 +14,7 @@ import Background from './Background';
 
 function App() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Navbar />
       <Background />
       <Home />

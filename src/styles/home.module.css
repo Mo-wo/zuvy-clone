@@ -1,6 +1,8 @@
 .main{
     margin: 0 150px;
     z-index: 1;
+    color: #2B2C3E;
+
 }
 .section{
     display: flex;
