@@ -6,17 +6,28 @@ import CloseIcon from '@mui/icons-material/Close';
 
 
 const Navbar = () => {
-    const [openNav, setOpenNav] = useState(false);
+    const [openNav, setOpenNav] = useState(true);
 
     const handleClick = () => {
-        setOpenNav(prev => !prev)
+      setOpenNav(!openNav)
+
     }
 
     return ( 
         <nav className={navStyles.nav}>
             <div className={navStyles.navContent}>
+                <div className={navStyles.menuIcons}>
+                    <button onClick={handleClick} className={navStyles.hamburger}>
+                        {openNav ? (
+                            <MenuIcon sx={{ fontSize: "35px", textAlign: "center" }} /> ) : (
+                           <CloseIcon sx={{ fontSize: "35px", textAlign: "center" }} /> 
+                        )}
+                    </button>
+                </div>
                 <img className={navStyles.img} src={logo} alt="Zuvy Logo" />
-                <div className={navStyles.navMenu}>
+                {/* style={{ display: (showNav ? 'flex' : 'none') }} */}
+                <div className={openNav ? navStyles.navMenu : `${navStyles.expanded_nav} ${navStyles.navMenu}`} >
+                    {/* {} */}
                     <ul className={navStyles.ul}>
                         <li className={navStyles.li}><a href="#Home">Home</a></li>
                         <li className={navStyles.li}><a href="#How">How It works</a></li>
@@ -27,14 +38,7 @@ const Navbar = () => {
                         <span>Join the Waitlist</span>
                     </div>
                 </div>
-                <div className={navStyles.menuIcons}>
-                    <button onClick={handleClick} className={navStyles.hamburger}>
-                        {openNav ? (
-                            <MenuIcon sx={{ fontSize: "35px", textAlign: "center" }} /> ) : (
-                           <CloseIcon sx={{ fontSize: "35px", textAlign: "center" }} /> 
-                        )}
-                    </button>
-                </div>
+               
             </div>
         </nav>
         
