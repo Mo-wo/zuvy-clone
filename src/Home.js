@@ -25,7 +25,7 @@ const Home = () => {
                     <div className={styles.sectionContent}>
                         <div className={styles.sectionText}>
                             <h1>Get Paid <span className={styles.orange}>On time</span><br/>everytime</h1>
-                            <p>Dreaming of a world where all customers pay up time? <br/>Dream no more with Zuvy</p>
+                            <p>Dreaming of a world where all customers pay up on time? <br/>Dream no more with Zuvy</p>
                             <WaitlistButton />
                         </div>
                         <div className={styles.sectionImage}>

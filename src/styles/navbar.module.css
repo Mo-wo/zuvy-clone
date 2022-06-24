@@ -61,9 +61,6 @@
 .navLink{
     margin: 15px 0 0 0;
     display: flex;
-    transition: transform 1s linear;
-    /* justify-self: center; */
-    /* left: 20%; */
 }
 .navLink span{
     font-weight: bold;
@@ -82,8 +79,6 @@
     background-color: #f4f5ffa4;
     color: #3d49cfd0;
     margin: auto;
-    /* width: 40px;
-    height: 40px; */
     padding: 2px 5px;
     border-radius: 8px;
     border: none;
@@ -93,22 +88,14 @@
     display: none;
 }
 
-
-
-/* --------------------------------- */
-@media screen and (max-width: 320px){
+/* ------------Media Queries-------------------- */
+@media screen and (min-width: 249px){
     .img{
-        margin: 0 0;
-        border: 1px solid red;
-    }
-}
-@media screen and (min-width: 321px){
-    .img{
-        margin: auto;
+        margin: auto; 
         justify-self: center;
     }
 }
- @media screen and (max-width: 638px){
+@media screen and (max-width: 638px){
     .navMenu{
         display: none;
     }
