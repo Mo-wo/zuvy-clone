@@ -43,8 +43,31 @@
 }
 
 /* ----------------------Media Queries--------------------------- */
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 220px){
     .waitlistLink{
-        margin: auto;
+        width: 130px;
+    }
+    .waitlistLink .arrow{
+        left: 130px;
+    }
+    .waitlistLink:hover .arrow{
+        left: 145px;
+    }
+    .button{
+        font-size: .8rem;
+    }
+}
+@media screen and (min-width: 425px){
+    .waitlistLink{
+        width: 170px;
+    }
+    .waitlistLink .arrow{
+        left: 160px;
+    }
+    .waitlistLink:hover .arrow{
+        left: 180px;
+    }
+    .button{
+        font-size: 1rem;
     }
 }
